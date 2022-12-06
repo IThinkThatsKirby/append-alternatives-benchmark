@@ -70,7 +70,7 @@ func howManyDigits(x int) int {
 	return digits
 }
 
-// range withmanuall set size
+// range fill with manuall set size
 func manualSetSizeRangeDigitize(x int) []int {
 	digit := 0
 	digits := make([]int, 10)
@@ -85,6 +85,7 @@ func manualSetSizeRangeDigitize(x int) []int {
 	return digits
 }
 
+// tests
 func Test_howManyDigits(t *testing.T) {
 	if got := howManyDigits(1234567890); got != 10 {
 		t.Errorf("howManyDigits() = %v, want %v", got, 10)
